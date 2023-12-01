@@ -1,3 +1,5 @@
+import { connectToDatabase } from "@/utils/connectMongo";
+
 export default function sitemap() {
   return [
     {
