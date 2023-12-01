@@ -1,5 +1,8 @@
 import { connectToDatabase } from "@/utils/connectMongo";
 
+// Sitemap location
+// http://localhost:3000/sitemap.xml
+
 export default async function sitemap() {
   const client = await connectToDatabase();
   // Sitemap is my database' name
@@ -14,24 +17,5 @@ export default async function sitemap() {
     priority: `${item.priority}`,
   }));
 
-  return [
-    {
-      url: "https://acme.com",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 1,
-    },
-    {
-      url: "https://acme.com/about",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: "https://acme.com/blog",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.5,
-    },
-  ];
+  return [...post];
 }

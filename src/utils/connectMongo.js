@@ -8,7 +8,7 @@ export async function connectToDatabase() {
   if (!MONGODB_URI) console.log("MongoDB URI not found!");
 
   try {
-    cleint = await MongoClient.connect(MONGODB_URI);
+    client = await MongoClient.connect(MONGODB_URI);
     console.log("Connected to MongoDB!");
     return client;
   } catch (error) {

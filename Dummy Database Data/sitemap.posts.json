@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "6569dcf2f027eff549422b7f"
+  },
+  "url": "https://acme.com",
+  "lastModified": "2023-12-01T13:16:46.000Z",
+  "changeFrequency": "yearly",
+  "priority": 1
+},
+{
+  "_id": {
+    "$oid": "6569dcf2f027eff549422b80"
+  },
+  "url": "https://acme.com/about",
+  "lastModified": "2023-12-01T13:16:46.000Z",
+  "changeFrequency": "monthly",
+  "priority": 0.8
+},
+{
+  "_id": {
+    "$oid": "6569dcf2f027eff549422b81"
+  },
+  "url": "https://acme.com/blog",
+  "lastModified": "2023-12-01T13:16:46.000Z",
+  "changeFrequency": "weekly",
+  "priority": 0.5
+}]
