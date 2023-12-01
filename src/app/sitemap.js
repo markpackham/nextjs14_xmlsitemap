@@ -4,6 +4,7 @@ import { connectToDatabase } from "@/utils/connectMongo";
 // http://localhost:3000/sitemap.xml
 
 // Revalidate the page so we get the sitemap updated ever hour
+// setting it to 0 would revalidate it all the time
 export const revalidate = 3600;
 
 export default async function sitemap() {
